@@ -1,0 +1,13 @@
+1. ArryList 与LinkedList 有何区别?
+	两者都实现了List 接口
+	(1)ArrayList 是由Array 所支持的基于一个索引的数据结构,它提供对元素的随机访问;LinkedList 存储一系列的节点数据,
+		每个节点都与前一个和下一个的节点相接,尽管有使用索引获取元素的方法,内部实现是从起点开始遍历,遍历到索引得节点然后返回元素,
+		要比ArrayList慢.
+	(2)与ArrayList相比,在 Linkedlist 中插入,添加和删除一个元素都比ArrayList 要快,之所以是因为在一个元素被插入中间的时候,
+		不会涉及到改变数组的大小,或者更新索引.
+	(3)LinkedList 比ArrayList 消耗更多内存,因为LinkedList中每个节点存储了前后节点的引用 
+
+2. 哪些集合类提供对元素的随机访问?
+	ArrayList,HashMap,TreeMap和HashTable类系统对元素的随机访问.
+3. 哪些集合线程是安全的?
+	Vector,HashTable,Properties和Stack是同步类,所以它们是线程安全的,可以在多线程下使用.
