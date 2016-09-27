@@ -11,6 +11,11 @@ public class GetFileBytes {
 	public static void main(String[] args) throws Exception{
 		 int size;
 	      URL url = new URL("http://www.w3cschool.cc/wp-content/themes/w3cschool.cc/assets/img/newlogo.png");
+	      System.out.println(url.getFile());
+	      System.out.println(url.getProtocol());
+	      System.out.println(url.getPort());
+	      System.out.println(url.getQuery());
+	      System.out.println(url.getRef());
 	      URLConnection conn = url.openConnection();
 	      size = conn.getContentLength();
 	      if (size < 0)
