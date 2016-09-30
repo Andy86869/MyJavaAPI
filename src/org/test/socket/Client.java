@@ -7,6 +7,11 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+/**
+ * @author Andy
+ * 基于TCP 协议的Socket 通信,实现用户登录
+ *
+ */
 public class Client {
 
 	public static void main(String[] args) {

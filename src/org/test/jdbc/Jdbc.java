@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
- * jdbc 连接数据库查询一天数据返回 到javabean
+ * jdbc 连接数据库查询一条数据返回 到javabean
  */
 public class Jdbc {
 
@@ -48,7 +48,11 @@ public class Jdbc {
 					+ seckill.getCreateTime());
 		}
 	}
-
+	/**
+	 * 连接数据库查询一条数据返回 到javabean
+	 * @return 到javabean
+	 * @throws Exception
+	 */
 	public static Seckill returnBean() throws Exception {
 		Connection conn = null;
 		Statement stmt = null;

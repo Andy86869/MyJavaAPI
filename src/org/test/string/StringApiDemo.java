@@ -151,5 +151,6 @@ public class StringApiDemo {
 		 */
 		String strReplace = "Hello";
 		System.out.println("替换后的结果是："+strReplace.replaceAll("l","x"));
+		System.out.println(strReplace.replaceFirst("h", "r"));
 	}
 }
