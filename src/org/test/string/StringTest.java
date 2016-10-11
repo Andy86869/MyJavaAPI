@@ -3,7 +3,7 @@ package org.test.string;
 public class StringTest {
 
 	public static void main(String[] args) {
-		methodStr();
+		equslsStr();
 	}
 	
 	public static void methodStr(){
