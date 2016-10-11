@@ -12,7 +12,7 @@ public class Actor extends Thread {
 		boolean keepRuning = true;
 		while(keepRuning){
 			System.out.println(getName()+"登台演出了"+(++count));
-			if (count==10000) {
+			if (count==100) {
 				keepRuning = false;
 			}
 			if (count%10==0) {

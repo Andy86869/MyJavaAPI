@@ -13,22 +13,22 @@ public class Actress implements Runnable{
 		boolean keepRuning = true;
 		while(keepRuning){
 			System.out.println(Thread.currentThread().getName()+"登台演出了"+(++count));
-			if (count==10000) {
+			if (count==100) {
 				keepRuning = false;
 			}
-//			if (count%10==0) {
-//				try {
-//					Thread.sleep(1000);
-//				} catch (Exception e) {
-//					e.printStackTrace();
-//				}
-//			}
+			if (count%10==0) {
+				try {
+					Thread.sleep(1000);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
 		}
 		System.out.println("演出结束了!");
 		
 	}
 	public static void main(String[] args) {
-//		Thread thread = new Thread(new Actress(), "Ms.Gao");
-//		thread.start();
+		Thread thread = new Thread(new Actress(), "Ms.Gao");
+		thread.start();
 	}
 }
