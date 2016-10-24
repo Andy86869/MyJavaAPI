@@ -30,7 +30,6 @@ public class HashMapApi {
 			System.out.println("key = " + entry.getKey() + ",value =" + entry.getValue());
 		}
 	}
-
 	/**
 	 * 方法#2 使用For-Each 迭代 只需要用到map的keys或values时，可以遍历KeySet或者values代替entrySet
 	 * 这个方法比entrySet迭代具有轻微的性能优势(大约快10%)并且代码更简洁
